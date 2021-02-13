@@ -31,16 +31,16 @@ The Simplified Instructional Computer Assembler
 
 ## Assembler 설계이슈
 
-### 7. 어셈블러의 아키텍처
+### 1. 어셈블러의 아키텍처
 Two-pass Assembler로 pass1과 pass2 동안 어셈블러 지시어를 처리하고 목적프로그램을 작성한다.
 
-### 8. Micro-Instruction Set Table을 위한 데이터구조
+### 2. Micro-Instruction Set Table을 위한 데이터구조
 모든 요소들을 Array형태로 나타내어 하나의 구조체로 묶어 구조체 배열로 표현하였다.
 
-### 9. Micro-Instruction Set Table의 검색 알고리즘
+### 3. Micro-Instruction Set Table의 검색 알고리즘
 이진 탐색 알고리즘을 사용하여 명령어를 검색하는 strsearch 함수를 작성하였다.
 
-### 10. 어셈블리언어상의 Addressing Mode 표기방법
+### 4. 어셈블리언어상의 Addressing Mode 표기방법
 
 ![4](README/4.bmp)
 
@@ -48,7 +48,7 @@ Two-pass Assembler로 pass1과 pass2 동안 어셈블러 지시어를 처리하�
 
 Indexed Addressing mode: 오퍼랜드에 ‘,x’로 입력받았을 때 flag bit에 1로 표기한 후 계산한다. 인덱스 주소지정 방식은 인덱스 레지스터의 내용과 address를 더하여 유효 주소를 결정한다. 인덱스 레지스터는 인덱스 값을 저장하는 특수 레지스터이다.
 
-### 11. 어셈블리언어상의 Directive Instructions
+### 5. 어셈블리언어상의 Directive Instructions
 - START: 프로그램의 시작주소와 이름을 나타낸다.
 - END: 프로그램의 끝과 프로그램의 최초로 실행할 명령어의 위치를 나타낸다.
 - BYTE: 문자 또는 16진수 상수를 생성하며, 상수가 차지하는 바이트 수를 나타낸다.
@@ -56,7 +56,7 @@ Indexed Addressing mode: 오퍼랜드에 ‘,x’로 입력받았을 때 flag bi
 - RESB: 데이터 영역의 크기를 지시된 바이트 수만큼 예약한다.
 - RESW: 데이터 영역의 크기를 지시된 워드 수만큼 예약한다.
 
-### 12. 프로그램 Object Codes의 구조
+### 6. 프로그램 Object Codes의 구조
 object code는 각 명령어에 해당하는 opcode 2-bit와 오퍼랜드에 해당하는 location 값을 연결하여 표현한다.
 
 이를 header record, text record, end record 세 부분으로 나누어 표현하였다.
