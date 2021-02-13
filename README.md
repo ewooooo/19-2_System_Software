@@ -96,6 +96,7 @@ object code는 각 명령어에 해당하는 opcode 2-bit와 오퍼랜드에 해
 팀 내에서 공통적으로 사용하는 변수와 구조체를 미리 약속하여 선언하는 헤더 파일이다.
 
 선언된 구조체는 총 3가지이다. Statement 구조체는 입력파일에서 받아온 SIC 코드와 단계적인 과정에서 각 line에 저장되어야하는 값을 String을 가지는 구조체이다. Store 구조체는 Instruction Set Table로 각 opcode에 해당하는 Hex 값을 가지고 있다. entry 구조체는 SYMTAB로 symbol에 해당하는 locate 값과 errorflag 값을 가지고 있다.
+
 ![8](README/8.PNG)
 
 외부변수로 선언된 변수는 int LastIndex 와 char *programLength이다. LastIndex는 #define MAXLINE 100으로 생성된 sic구조체 배열에서 사용하고 있는 배열 마지막 인덱스 값을 지칭한다. programLength는 sic 프로그램 전체 길이 값을 String으로 가지는 변수이다. 
