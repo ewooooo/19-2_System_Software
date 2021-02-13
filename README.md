@@ -1,9 +1,6 @@
-# 19-2_System_Software
+# SIC 어셈블러 개발
 2019-2 시스템소프트웨어 SIC 어셈블러 프로젝트
 
----
-
-# SIC 어셈블러 개발
 The Simplified Instructional Computer Assembler
 
 # 설계 이슈
