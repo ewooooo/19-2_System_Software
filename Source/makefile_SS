@@ -1,0 +1,12 @@
+assembler: main.o instruction_set.o objectcode.o pass1.o pass2.o
+	gcc -o assembler main.o instruction_set.o objectcode.o pass1.o pass2.o
+main.o: main.c
+	gcc -c main.c
+instruction_set.o: instruction_set.c
+	gcc -c instruction_set.c
+objectcode.o: objectcode.c
+	gcc -c objectcode.c
+pass1.o: pass1.c
+	gcc -c pass1.c
+pass2.o: pass2.c
+	gcc -c pass2.c
