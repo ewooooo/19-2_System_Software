@@ -183,7 +183,3 @@ End Record는 sic[0].operand에서 프로그램 시작주소를 가져와 저장
 
 strHex 문자열의 길이가 len이 될 때까지 문자열 앞에 0을 붙인다.
 
----
-
-# Developer
-
